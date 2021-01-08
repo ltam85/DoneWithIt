@@ -1,29 +1,12 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { View } from "react-native";
 
 export default function App() {
-  let x = 1;
-
-  console.log("Executed");
-
   return (
-    <SafeAreaView style={styles.container}>
-      <Text numberOfLines={1}>
-        Hello World - Really long text. Longer Longer Longer Longer Longer
-        Longer Longer Longer Longer Longer Longer Longer Longer Longer Longer
-        Longer
-      </Text>
-      <StatusBar style="auto" />
-    </SafeAreaView>
+    <View style={{ backgroundColor: "#fff", flex: 1 }}>
+      <View style={{ backgroundColor: "dodgerblue", flex: 2 }} />
+      <View style={{ backgroundColor: "gold", flex: 1 }} />
+      <View style={{ backgroundColor: "tomato", flex: 1 }} />
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
